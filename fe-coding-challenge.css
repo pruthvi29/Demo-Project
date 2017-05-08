@@ -1,0 +1,158 @@
+body {font-family: "Lato", sans-serif;}
+         
+         /*div.tab {
+         overflow: hidden;
+         }*/
+
+         button{
+         	border-radius: 15px;
+         	background-color: lightblue;
+         }
+         
+         .tabcontent {
+         display: none;
+         padding: 6px 12px;
+         /*border: 1px solid #ccc;*/
+         border-top: none;
+         }
+         p.sansserif {
+         font-family: verdana;
+         text-align: -webkit-center;        
+         }
+         p.sansserif b{
+         font-size: x-small;
+         }
+         hr {
+         margin: 30px 0 30px 0;
+         }
+         #tabs span{
+         margin-left: 16px;
+         text-decoration: none;
+         border-bottom-width: thick;
+         border-bottom: 4px solid;
+         cursor: pointer;
+         }
+         #tabs a:active{
+         border : 2px solid gainsboro
+     }
+         #tabs{
+         text-align: -webkit-center;
+         }
+         .note {
+         position: relative;
+         width: 60%;
+         padding: 1em 1.5em;
+         margin: 2em auto;
+         color: #fff;
+         overflow: hidden;
+         }
+         div>#folderOne{
+         	background: blue;
+         	color: #fff;
+         }
+         div>#folderTwo{
+         	background: lightgray;
+         	color: black
+         }
+         .note:before {
+         content: "";
+         position: absolute;
+         top: 0;
+         right: 0;
+         border-width: 0 16px 16px 0;
+         border-style: solid;
+         border-color: #fff #fff #658E15 #658E15;
+         /*background: #658E15;*/
+         -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+         -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+         box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+         /* Firefox 3.0 damage limitation */
+         display: block; width: 0;
+         }
+         .note.rounded {
+         -moz-border-radius: 5px 0 5px 5px;
+         border-radius: 5px 0 5px 5px;
+         }
+         .note.rounded:before {
+         border-width: 8px;
+         border-color: #fff #fff transparent transparent;
+         -moz-border-radius: 0 0 0 5px;
+         border-radius: 0 0 0 5px;
+         }
+         .sectionBottom {
+         position: relative;
+         background-color: white;
+         height: 2px !important;
+         width: 100% !important;
+         }
+         .sectionBottom:after {
+         content: '';
+         position: absolute;
+         top: -31%;
+         left: 50%;
+         margin-left: -50px;
+         width: 0;
+         height: 0;
+         border-top: solid 25px white;
+         border-left: solid 25px transparent;
+         border-right: solid 25px transparent;
+         }
+         /* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.folder{
+	padding: 10px;
+}
